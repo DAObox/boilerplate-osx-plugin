@@ -46,7 +46,7 @@ contract TemplatePlugin is ITemplate, PluginUUPSUpgradeable {
     }
 
     /// @notice Does something that requires a permission
-    function execute(
+    function sensitive(
         IDAO.Action[] calldata _actions
     ) external auth(SOME_PERMISSION_ID) {
         revert("Not implemented.");
